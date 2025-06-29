@@ -19,16 +19,9 @@
       "command": "npm run build"
     },
     {
-      "name": "Build Windows",
-      "command": "pnpm run build:win"
-    },
-    {
-      "name": "Build Mac",
-      "command": "pnpm run build:mac"
-    },
-    {
-      "name": "Build Linux",
-      "command": "pnpm run build:linux"
+      "name": "Run codegen",
+      "cwd": "./mimic-core",
+      "command": "npx playwright codegen --output=./trials/default.spec.ts --save-storage=./trials/default.json --save-har=./trials/default.har --ignore-https-errors https://playwright.dev/docs/aria-snapshots"
     }
   ]
 }
