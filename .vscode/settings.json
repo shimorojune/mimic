@@ -7,5 +7,28 @@
   },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "terminals.terminals": [
+    {
+      "name": "Run",
+      "command": "pnpm run dev"
+    },
+    {
+      "name": "Build core",
+      "cwd": "./mimic-core",
+      "command": "npm run build"
+    },
+    {
+      "name": "Build Windows",
+      "command": "pnpm run build:win"
+    },
+    {
+      "name": "Build Mac",
+      "command": "pnpm run build:mac"
+    },
+    {
+      "name": "Build Linux",
+      "command": "pnpm run build:linux"
+    }
+  ]
 }

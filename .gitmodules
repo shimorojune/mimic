@@ -1,0 +1,3 @@
+[submodule "mimic-core"]
+	path = mimic-core
+	url = https://github.com/shimorojune/mimic-core.git
