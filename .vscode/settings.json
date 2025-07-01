@@ -1,27 +1,30 @@
 {
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
   "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
   "terminals.terminals": [
     {
       "name": "Run",
-      "command": "pnpm run dev"
+      "command": "pnpm run dev",
+      "focus": true
     },
     {
       "name": "Build core",
       "cwd": "./mimic-core",
-      "command": "npm run build"
+      "command": "npm run build",
+      "focus": true
     },
     {
       "name": "Run codegen",
       "cwd": "./mimic-core",
-      "command": "npx playwright codegen --output=./trials/default.spec.ts --save-storage=./trials/default.json --save-har=./trials/default.har --ignore-https-errors https://playwright.dev/docs/aria-snapshots"
+      "focus": true,
+      "command": "npx playwright codegen --output=./trials/default.spec.ts --save-storage=./trials/default.json --save-har=./trials/default.har --ignore-https-errors https://eg5611ain.ezdev.net"
     }
   ]
 }
